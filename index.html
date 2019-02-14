@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>murphy42.com</title>
+
+    <!-- Google Web Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Barrio|Sansita|Open+Sans" rel="stylesheet">
+
+    <!-- Custom style sheets -->
+    <link href="css/murphy.css" rel="stylesheet"/>
+    <link href="css/views.css" rel="stylesheet"/>
+
+</head>
+<body onload="init()">
+
+<div id="scissors">
+    <div>v</div>
+    <div>∞</div>
+</div>
+
+<div id="main-menu">
+    <div id="header">
+        <div id="logo">JM</div>
+        <div id="secret"></div>
+        <div id="selfie"><img src="img/me-bw.png" alt="me"/></div>
+        <div id="tagline">passionate about<br />problem-solving</div>
+        <div id="name">Jason Murphy</div>
+    </div>
+    <div id="menu">
+        <div class="buttonify" onclick="displayPortfolio('hangman')">hangman</div>
+        <div class="buttonify" onclick="displayPortfolio('gameOfLife')">game of life</div>
+        <div class="buttonify" onclick="displayPortfolio('books')">books</div>
+        <div class="buttonify" onclick="display('downloads')">downloads</div>
+    </div>
+    <div id="footer">
+        <div>
+            Jason Murphy Ⓒ 2017
+        </div>
+        <div>
+            For more information, <a id="email" href="#">email me</a>
+        </div>
+        <div>
+            <a class="a-link" onclick="displayFamilyPicture()">picture</a> ::
+            <a href="https://www.google.com/search?q=what+is+the+answer+to+life+the+universe+and+everything"
+               target="_blank">why 42?</a>
+        </div>
+    </div>
+</div>
+
+<div id="content">
+    <!--Content Views will go here.-->
+</div>
+<div id="x" onclick="hideContent()">
+    ✕
+</div>
+
+<script src="jquery-3.1.1.js" type="application/javascript"></script>
+<script src="murphy.js" type="application/javascript"></script>
+</body>
+</html>

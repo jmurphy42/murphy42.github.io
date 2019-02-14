@@ -1,0 +1,187 @@
+#gameOfLife-container {
+    background-color: gainsboro;
+    border: 1px solid #323639;
+    width: 1140px;
+    height: 680px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #252735;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#gameOfLife-container h2 {
+    background-color: #252735;
+    color: gainsboro;
+    font-weight: normal;
+    padding: 20px;
+    margin: 0;
+}
+
+#gameOfLife-container h3 {
+    clear: both;
+    border-bottom: 1px solid #252735;
+}
+
+#outerFrame {
+    position: absolute;
+    width: 655px;
+    height: 655px;
+    left: 0;
+    top: 0;
+    border: 5px solid gainsboro;
+}
+
+#gameFrame {
+    border: 3px solid #252735;
+    position: relative;
+    width: 646px;
+    height: 646px;
+    left: 0;
+    top: 0;
+}
+
+#data {
+    position: absolute;
+    left: 600px;
+    top: 150px;
+    margin: 10px;
+}
+
+#msg {
+    display: none;
+    position: absolute;
+    text-align: center;
+    top: 330px;
+    left: 10px;
+}
+
+.lil{
+    font-size: smaller;
+}
+
+#gameOfLife-container a {
+    color: #904519;
+    font-weight: bolder;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+
+#gameOfLife-container a:hover {
+    color: #9a2517;
+    text-decoration: underline;
+}
+
+#canvas {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+#cellReport {
+    position: absolute;
+    top: 655px;
+    left: 10px;
+}
+
+#genLen {
+    width: 220px;
+    color: red;
+}
+
+.ui-slider {
+    width: 250px;
+    color: #222222;
+}
+
+#data {
+    left: 675px;
+    top: 0;
+    width: 440px;
+}
+
+#report {
+    width: 180px;
+    border: 1px solid #252735;
+    padding: 10px;
+}
+
+.stat {
+    margin: 0;
+    border: 0;
+    font-size: medium;
+}
+
+.buttonize {
+    padding: 5px;
+    border: 1px solid #252735;
+    float: right;
+    cursor: pointer;
+    text-align: center;
+    font-size: small;
+
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+    margin: 10px 0;
+    width: 110px;
+    background-color: #cccccc;
+}
+
+.saveGame, .restoreGame {
+    margin: 5px auto;
+}
+
+#speed {
+    float: left;
+    width: 250px;
+    font-size: large;
+    text-align: center;
+    margin: 0;
+}
+
+#speed::after{
+    clear: both;
+}
+
+#runButton, #stepButton {
+    float: left;
+    background-color: #252735;
+    height: 50px;
+    color: gainsboro;
+    font-size: x-large;
+    font-weight: bolder;
+    margin: 0 10px 0 0;
+}
+
+#stepButton {
+    width: 30px;
+    font-weight: bold;
+}
+
+#stopButton {
+    float: none;
+    background-color: #9a2517;
+    color: gainsboro;
+    font-size: large;
+    font-weight: bold;
+}
+
+#clearButton {
+    float: none;
+}
+
+#settingTable{
+    width: 500px;
+}
+
+#settingTable td {
+    padding: 3px;
+}
+
+#instructionsHeader {
+    cursor: pointer;
+}

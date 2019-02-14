@@ -1,0 +1,78 @@
+<div id="gameOfLife-container">
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="portfolio/gameOfLife/gameOfLife.css"/>
+    <link type="text/css" rel="stylesheet" href="portfolio/gameOfLife/slider.css"/>
+    <script src="portfolio/gameOfLife/gameOfLife.js"></script>
+
+    <script>initGOL();</script>
+
+    <div id="outerFrame">
+        <div id="gameFrame">
+            <canvas id="canvas" width="640" height="640">This game is not supported by your browser.</canvas>
+        </div>
+    </div>
+    <div id="cellReport" class="lil"></div>
+
+    <div id="data">
+        <div id="report"><h3 class='stat'>Generations: </h3>
+            <h3 class='stat'>Live Cells: </h3>
+            <h3 class='stat'>Active Cells: </h3>
+        </div>
+        <h3 id="instructionsHeader" onclick="toggleInstructions()">Instructions ▽</h3>
+        <ul id="instructions">
+            <li>Click the grid to create a beginning world.</li>
+            <li>Click 'RUN' to start the game of life.</li>
+            <li>Cells will become alive, persist, and die, as determined by this set of rules:
+                <ul>
+                    <li>Living cells touching 0-1 cells are lonely. They die.</li>
+                    <li>Living cells touching 2-3 cells are happy. They persist.</li>
+                    <li>Living cells touching 4+ cells are crowded. They die.</li>
+                    <li>Other cells touching 3 cells are born.</li>
+                </ul>
+            </li>
+            <li>Try a variety of starting configurations to see the variety of lives you can create.</li>
+        </ul>
+        <h3>Settings</h3>
+
+        <table id="settingTable">
+            <tr>
+                <td>
+                    <div id="runGame">
+                        <p id="runButton" class="buttonize" onclick="runLooper()">
+                            RUN
+                        </p>
+                    </div>
+                    <div id="stepGame">
+                        <p id="stepButton" class="buttonize" onclick="run(true)">
+                            ▶
+                        </p>
+                    </div>
+                    <div id="speed">
+                        Generation Length: <span id="speedReport">100</span>ms<br/>
+                        <input type="range" oninput="updateSlider(this.value)" title="Generation Length"
+                               id="genLen" value="100" min="20" max="250"/>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div id="stopGame">
+                        <p id="stopButton" class="buttonize" onclick="stopLooper()">
+                            Stop
+                        </p>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div id="clearGame">
+                        <p id="clearButton" class="buttonize" onclick="clearWorld()">
+                            Clear World
+                        </p>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>

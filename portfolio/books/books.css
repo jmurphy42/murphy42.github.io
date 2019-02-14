@@ -1,0 +1,121 @@
+#books-container {
+    font-family: 'Open Sans', sans-serif;
+}
+
+#books-container h1 {
+    margin: 0;
+}
+
+.books-description {
+    font-size: 12px;
+    padding-bottom: 50px;
+}
+
+#books-container input {
+    width: 325px;
+}
+
+.books-data {
+    padding: 2px 5px;
+    background-color: #e0e0e0;
+    font-weight: bold;
+}
+
+.books-dataContainer {
+    position: absolute;
+    top: -50px;
+    left: 400px;
+    padding: 25px;
+    margin: 50px 25px;
+    border: 1px solid #cfcfcf;
+    width: 300px;
+}
+
+.books-dataContainer div {
+    margin: 15px 0;
+}
+
+.books-smaller {
+    font-size: smaller;
+}
+
+#books-coverDiv {
+    background-image: url(blank.png);
+    margin: 0;
+    position: relative;
+    width: 250px;
+    height: 350px;
+}
+
+#books-cover {
+    font-size: x-small;
+    position: absolute;
+    margin: 0;
+    top: 7px;
+    left: 30px;
+    width: 210px;
+    height: 315px;
+}
+
+#books-query {
+    margin: 10px 25px;
+}
+
+.books-buttonify {
+    padding: 3px 20px;
+    margin: 0 25px;
+    font-size: 14px;
+    font-weight: bold;
+    background-color: #cfcfcf;
+    border: 2px solid #000000;
+    border-radius: 5px;
+    box-shadow: 0 5px #999999;
+    float: left;
+    cursor: pointer;
+}
+
+.books-buttonify:active {
+    transform: translate(0, 3px);
+    box-shadow: 0 2px #999999;
+}
+
+#books-content {
+    position: relative;
+}
+
+.books-warning {
+    display: none;
+    font-size: smaller;
+    border: 1px solid #cf3f3f;
+    background-color: #ffcfcf;
+    color: #cf3f3f;
+    position: absolute;
+    padding: 10px;
+    pointer-events: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+#books-timer{
+    float: left;
+    margin: 5px 25px;
+    font-size: 13px;
+}
+
+#books-timer::after{
+    clear: both;
+}
+
+#books-timeWarning {
+    top: 10px;
+    left: 25px;
+    width: 325px;
+}
+
+#books-queryWarning {
+    top: 100px;
+    left: 25px;
+    width: 325px;
+}

@@ -1,0 +1,176 @@
+.a-link {
+    cursor: pointer;
+}
+
+h1, h2 {
+    margin: 0;
+    background-color: #323639;
+    color: #f6f6f6;
+    width: 100%;
+    font: 24px 'Sansita', sans-serif;
+    padding: 25px 0 0 25px;
+    height: 60px;
+}
+
+h2{
+    padding: 5px 0 0 25px;
+    height: 30px;
+    font-size: 18px;
+}
+
+li, li .info{
+    font-size: smaller;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.col-400 {
+    width: 400px;
+    float: left;
+    margin: 0 25px 0 0;
+}
+
+.col-400::after {
+    clear: both;
+}
+
+.col-400 div{
+    margin: 0 0 25px 0;
+}
+
+.col-300 {
+    width: 300px;
+    float: left;
+    margin: 0 25px 0 0;
+}
+
+.col-300::after {
+    clear: both;
+}
+
+.col-300 div{
+    margin: 0 0 25px 0;
+}
+
+ul{
+    padding: 0 0 0 20px;
+    margin: 0;
+}
+
+#cat{
+    border: 4px solid #323639;
+    cursor: pointer;
+}
+
+#secret{
+    position: fixed;
+    font: 10px monospace;
+    color: rgba(20,21,22,0.5);
+    top: 80px;
+    left: 140px;
+    width: calc(100% - 100px);
+    height: 20px;
+    overflow-x: hidden;
+    white-space: nowrap;
+    text-align: left;
+}
+
+.w800 img{
+    max-width: 800px;
+}
+
+.toggleable, .toggleable-a{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 325px;
+}
+
+.toggleable-a{
+    left: 425px;
+}
+
+#family-pic {
+    border: 4px solid #323639;
+    width: 1008px;
+    height: 475px;
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+}
+
+#family-pic img {
+    position: absolute;
+    top: -100px;
+    left: 0;
+    width: 1000px;
+    height: 667px;
+}
+
+.hover-box {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border: 1px dashed #7C9E14;
+    border-radius: 5px;
+    color: #323639;
+    line-height: 85%;
+    font-weight: bold;
+    font-family: 'Sansita', serif;
+    text-align: center;
+}
+
+.hover-box p {
+    position: absolute;
+    text-align: center;
+    width: 70px;
+    left: -10px;
+    bottom: 45px;
+}
+
+#dad {
+    top: 148px;
+    left: 158px;
+}
+#mom {
+    top: 180px;
+    left: 236px;
+}
+#daughter {
+    top: 171px;
+    left: 298px;
+}
+#son {
+    top: 161px;
+    left: 360px;
+}
+#sister {
+    top: 184px;
+    left: 420px;
+}
+#brother-in-law {
+    top: 149px;
+    left: 490px;
+}
+#me {
+    top: 154px;
+    left: 590px;
+}
+#wife {
+    top: 169px;
+    left: 652px;
+}
+#brother {
+    top: 146px;
+    left: 760px;
+}
+#sister-in-law {
+    top: 160px;
+    left: 820px;
+}
+#not-pictured {
+    top: 400px;
+    left: 933px;
+}

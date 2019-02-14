@@ -1,0 +1,40 @@
+<div id="books-container">
+    <link type="text/css" rel="stylesheet" href="portfolio/books/books.css"/>
+    <script type="application/javascript" src="portfolio/books/books.js"></script>
+
+    <script>initBooks();</script>
+
+    <h1>
+        Book Finder
+    </h1>
+    <div class="books-description">
+        A service that uses the API from Goodreads to display book data.
+    </div>
+    <div id="books-content">
+        <input id="books-query" name="query" title="Title" type="text" value="Book Title or Author"/>
+        <br/>
+        <div class="books-buttonify" id="books-qButton">Submit</div>
+        <div id="books-timeWarning" class="books-warning">
+            Please do not make more than one request for data per 5 seconds.
+            It's bad manners, and Goodreads is so nice to give us this data.
+            Cheers.
+        </div>
+        <div id="books-queryWarning" class="books-warning">
+            There was an error sent from the Goodreads API:<br/>
+            <span id="books-error"></span>
+        </div>
+        <br/>
+    </div>
+    <div class="books-dataContainer" style="clear: both">
+        <div>Title: <span class="books-data" id="books-title">book title</span></div>
+        <div>Author: <span class="books-data" id="books-author">author name</span></div>
+        <div>Goodreads User ratings: <br/>
+            &nbsp; &nbsp; &nbsp;<span class="books-smaller"><span class="books-data" id="books-rating">#</span>/5.0
+        (<span class="books-data" id="books-numRatings">#</span> ratings)</span></div>
+        <div>Cover: <br/>
+            <div id="books-coverDiv">
+                <img id="books-cover" alt="Book cover" src=""/>
+            </div>
+        </div>
+    </div>
+</div>

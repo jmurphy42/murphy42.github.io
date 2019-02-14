@@ -1,0 +1,68 @@
+<div class="col-300">
+    <h1>Downloads: Desktop apps</h1>
+    <div>
+        <a id="dl-link-c" class="a-link bold" onclick="show('cryptography')">cryptography</a> :: Java :: an app
+        that allows the user to encrypt a text file using very basic (insecure) encryption algorithms.
+    </div>
+    <div>
+        <a id="dl-link-i" class="a-link bold" onclick="show('imager')">imager</a> :: Java :: an app
+        that allows the user to load, manipulate, and save image files.
+    </div>
+    <div>
+        <a id="dl-link-h" class="a-link bold" onclick="show('hoth')">hoth</a> :: C++ :: a console game
+        that mimics Hunt the Wumpus by Gregory Yob with a Star Wars theme: Wampa Hunt.
+    </div>
+</div>
+<div id="cryptography" class="toggleable centered w800">
+    <img src="img/cryptography.png" alt="cryptography app" />
+    <a href="docs/cryptography.jar" download="cryptography.jar">Download the app.</a>
+</div>
+<div id="imager" class="toggleable centered w800">
+    <img src="img/imager.png" alt="imager app" />
+    <a href="docs/imager.jar" download="imager.jar">Download the app.</a>
+</div>
+<div id="hoth" class="toggleable centered w800">
+    <img src="img/hoth.png" alt="hoth game" />
+    <a href="docs/hoth.zip" download="hoth.zip">Download the game.</a>
+</div>
+<script>
+    var $c = $('#cryptography');
+    var $i = $('#imager');
+    var $h = $('#hoth');
+    var shown = "n"; //n=none
+    $('#dl-link-c').click(function () {
+        if (shown !== "c") {
+            fadeOutAll();
+            $c.fadeIn(150);
+            shown = "c";
+        } else {
+            $c.fadeOut(100);
+            shown = "n";
+        }
+    });
+    $('#dl-link-i').click(function () {
+        if (shown !== "i") {
+            fadeOutAll();
+            $i.fadeIn(150);
+            shown = "i";
+        } else {
+            $i.fadeOut(100);
+            shown = "n";
+        }
+    });
+    $('#dl-link-h').click(function () {
+        if (shown !== "h") {
+            fadeOutAll();
+            $h.fadeIn(150);
+            shown = "h";
+        } else {
+            $h.fadeOut(100);
+            shown = "n";
+        }
+    });
+    function fadeOutAll(){
+        $c.fadeOut(10);
+        $i.fadeOut(10);
+        $h.fadeOut(10);
+    }
+</script>

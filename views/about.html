@@ -1,0 +1,71 @@
+<div class="col-400">
+    <h1>About Me</h1>
+    <div>
+        I am a student at <a href="http://www.msoe.edu/" target="_blank">Milwaukee School of Engineering</a> studying
+        Software Engineering. I will graduate in 2019 with <a id="transcript-link" class="a-link">high honors</a>.
+    </div>
+    <div>
+        I love solving problems, which is why I love coding. Any software
+        development introduces many different kinds of problems to be
+        solved—including problems that need creativity, technical
+        knowledge, experience, consistency, and clarity.
+    </div>
+    <div class="centered">
+        <a id="resume-link" class="a-link">See my resume</a>.
+    </div>
+    <h2>Published Educational Materials</h2>
+    <ul>
+        <li>Around the World in Eighty Days - Full Adaptation for Today's Readers
+            <span class="info">[<a
+                    href="https://www.teacherspayteachers.com/Product/Around-the-World-in-Eighty-Days-Full-Adaptation-for-Todays-Readers-1244056"
+                    target="_blank">details here</a>]</span></li>
+        <li>The Game of Life, a Math Project about Money
+            <span class="info">[<a
+                    href="https://www.teacherspayteachers.com/Product/The-Game-of-Life-a-Math-Project-about-Money-real-life-application-1204016"
+                    target="_blank">details here</a>]</span></li>
+        <li>Murder Mystery Game: And Then There Were None
+            <span class="info">[<a
+                    href="https://www.teacherspayteachers.com/Product/Murder-Mystery-Game-And-Then-There-Were-None-1010051"
+                    target="_blank">details here</a>]</span></li>
+        <li>Shakespeare Mystery Game
+            <span class="info">[<a
+                    href="https://www.teacherspayteachers.com/Product/Shakespeare-Mystery-Game-engaging-fun-background-knowledge-1570197"
+                    target="_blank">details here</a>]</span></li>
+    </ul>
+</div>
+<div id="transcript" class="toggleable-a">
+    <object data="docs/msoe_transcript.pdf" type="application/pdf" width="750" height=600">
+        file: <a href="docs/msoe_transcript.pdf">msoe_transcript.pdf</a>
+    </object>
+</div>
+<div id="resume" class="toggleable-a">
+    <object data="docs/resume.pdf" type="application/pdf" width="750" height=600">
+        file: <a href="docs/resume.pdf">resume.pdf</a>
+    </object>
+</div>
+
+<script>
+    var $t = $('#transcript');
+    var $r = $('#resume');
+    var shown = "n";
+    $('#transcript-link').click(function () {
+        if (shown != "t") {
+            $r.fadeOut(10);
+            $t.fadeIn(150);
+            shown = "t";
+        } else {
+            $t.fadeOut(100);
+            shown = "n";
+        }
+    });
+    $('#resume-link').click(function () {
+        if (shown != "r") {
+            $t.fadeOut(10);
+            $r.fadeIn(150);
+            shown = "r";
+        } else {
+            $r.fadeOut(100);
+            shown = "n";
+        }
+    });
+</script>
